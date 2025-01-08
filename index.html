@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Construtora especializada em serviços de construção. Entre em contato agora para orçamento e mais informações!">
+    <title>Construtora | Captura de Leads</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>Construtora</h1>
+            <button id="call-now" onclick="makeCall()">Ligue para nós agora</button>
+            <div class="social-buttons">
+                <button id="whatsapp-btn" onclick="openWhatsApp()">
+                    <i class="fab fa-whatsapp"></i> WhatsApp
+                </button>
+                <button id="facetime-btn" onclick="openFaceTime()">
+                    <i class="fas fa-video"></i> FaceTime
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section id="about-us" class="section">
+            <div class="container">
+                <h2>Sobre Nós</h2>
+                <p>Somos uma construtora dedicada a transformar sonhos em realidade. Nossa missão é oferecer serviços de alta qualidade, alinhados às necessidades dos nossos clientes. Conheça nossa equipe e visão de futuro!</p>
+            </div>
+        </section>
+
+        <section id="services" class="section">
+            <div class="container">
+                <h2>Serviços Oferecidos</h2>
+                <ul>
+                    <li>Construção residencial</li>
+                    <li>Construção comercial</li>
+                    <li>Renovação e reformas</li>
+                    <li>Gerenciamento de projetos</li>
+                </ul>
+            </div>
+        </section>
+
+        <section id="contact" class="section">
+            <div class="container">
+                <h2>Contato</h2>
+                <form id="contact-form" action="processa-lead.php" method="POST">
+                    <label for="name">Nome:</label>
+                    <input type="text" id="name" name="name" required>
+        
+                    <label for="email">E-mail:</label>
+                    <input type="email" id="email" name="email" required>
+        
+                    <label for="message">Mensagem:</label>
+                    <textarea id="message" name="message" required></textarea>
+        
+                    <button type="submit">Enviar</button>
+                </form>
+            </div>
+        </section>
+        
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 Construtora. Todos os direitos reservados.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
